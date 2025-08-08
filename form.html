@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Application Form</title>
+</head>
+<body>
+
+  <center>
+    <h1>Application Form</h1>
+    <p>Please fill out the form carefully</p>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+      <table cellpadding="10">
+
+        <!-- Personal Details -->
+        <tr><th colspan="2"><h3>Personal Information</h3></th></tr>
+
+        <tr>
+          <td>Full Name:</td>
+          <td><input type="text" name="fullname" placeholder="Enter your full name"></td>
+        </tr>
+
+        <tr>
+          <td>Password:</td>
+          <td><input type="password" name="password" placeholder="Create a password"></td>
+        </tr>
+
+        <tr>
+          <td>Email:</td>
+          <td><input type="email" name="email" placeholder="example@example.com"></td>
+        </tr>
+
+        <tr>
+          <td>Age:</td>
+          <td><input type="number" name="age" placeholder="Enter your age"></td>
+        </tr>
+
+        <tr>
+          <td>Date of Birth:</td>
+          <td><input type="date" name="dob"></td>
+        </tr>
+
+        <!-- Preferences -->
+        <tr><th colspan="2"><h3>Preferences</h3></th></tr>
+
+        <tr>
+          <td>Gender:</td>
+          <td>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+            <input type="radio" name="gender" value="other"> Other
+          </td>
+        </tr>
+
+        <tr>
+          <td>Skills:</td>
+          <td>
+            <input type="checkbox" name="skill1" value="java"> Java
+            <input type="checkbox" name="skill2" value="python"> Python
+            <input type="checkbox" name="skill3" value="web"> Web Dev
+          </td>
+        </tr>
+
+        <tr>
+          <td>Portfolio URL:</td>
+          <td><input type="url" name="portfolio" placeholder="https://yourportfolio.com"></td>
+        </tr>
+
+        <tr>
+          <td>Search your college:</td>
+          <td><input type="search" name="search" placeholder="Enter college name"></td>
+        </tr>
+
+        <tr>
+          <td>Preferred Joining Month:</td>
+          <td><input type="month" name="joining_month"></td>
+        </tr>
+
+        <tr>
+          <td>Preferred Time Slot:</td>
+          <td><input type="time" name="preferred_time"></td>
+        </tr>
+
+        <!-- Documents -->
+        <tr><th colspan="2"><h3>Upload Documents</h3></th></tr>
+
+        <tr>
+          <td>Upload Resume:</td>
+          <td><input type="file" name="resume"></td>
+        </tr>
+
+        <tr>
+          <td>Upload Passport Size Photo:</td>
+          <td><input type="file" alt="Upload Image"></td>
+        </tr>
+
+        <!-- Additional -->
+        <tr><th colspan="2"><h3>Additional Details</h3></th></tr>
+
+      
+        <tr>
+          <td>Experience Level:</td>
+          <td>
+            <input type="range" id="experience" name="experience" min="0" max="10" value="5" oninput="exp.value = experience.value">
+            <output name="exp" id="exp">5</output>
+          </td>
+        </tr>
